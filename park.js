@@ -27,9 +27,8 @@ Park.prototype = {
         lotsOfKids.push(dinosaur)
       }
     }
-      return lotsOfKids;
+    return lotsOfKids;
   }
 }
-
 
 module.exports = Park;

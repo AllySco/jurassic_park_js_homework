@@ -2,7 +2,6 @@ var Park = require('../park.js');
 var Dinosaur = require('../dinosaur.js');
 var assert = require('assert');
 
-
 describe('Park', function (){
 
   var park;
@@ -49,8 +48,4 @@ describe('Park', function (){
     assert.strictEqual(3, park.getOpyOver2().length);
   })
 
-
-
-
-  
 })

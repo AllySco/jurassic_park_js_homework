@@ -1,7 +1,6 @@
 var Dinosaur = require('../dinosaur.js');
 var assert = require('assert');
 
-
 describe('Dinosaur', function (){
 
   var dinosaur1;
@@ -21,8 +20,5 @@ describe('Dinosaur', function (){
   it("should get offspring per year", function() {
     assert.strictEqual(1, dinosaur2.opy);
   })
-
-
-
 
 })

@@ -3,5 +3,4 @@ var Dinosaur = function(type, opy) {
   this.opy = opy;
 }
 
-
 module.exports = Dinosaur;
