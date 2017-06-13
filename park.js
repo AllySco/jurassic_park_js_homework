@@ -3,9 +3,15 @@ var Park = function() {
 }
 
 Park.prototype = {
+
   emptyEnclosure: function() {
     this.enclosure = [];
+  },
+
+  addDino: function(dinosaur) {
+    this.enclosure.push(dinosaur);
   }
+  
 }
 
 
