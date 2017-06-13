@@ -38,8 +38,8 @@ describe('Park', function (){
     park.addDino(dinosaur2);
     park.addDino(dinosaur2);
     park.addDino(dinosaur3);
-    park.removeDino(dinosaur2.type);
-    assert.strictEqual(3, park.enclosure.length);
+    park.removeDino("T-rex");
+    assert.strictEqual(2, park.enclosure.length);
   })
 
   it("can get dinos opy greater than 2", function() {

@@ -13,10 +13,9 @@ Park.prototype = {
   },
 
   removeDino: function(type) {
-    for (var dinosaur of this.enclosure) {
-      if (dinosaur.type === type) {
-        var index = this.enclosure.indexOf(dinosaur);
-        this.enclosure.splice(index, 1);
+    for (i = this.enclosure.length - 1; i >= 0; i--) {
+      if (this.enclosure[i].type === type) {
+        this.enclosure.splice(i, 1);
       }
     }
   },
