@@ -1,4 +1,7 @@
-var Dinosaur = function(options) {
-  this.type = options.type;
-  this.opy = options.opy;
+var Dinosaur = function(type, opy) {
+  this.type = type;
+  this.opy = opy;
 }
+
+
+module.exports = Dinosaur;
