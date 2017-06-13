@@ -28,7 +28,7 @@ Park.prototype = {
         lotsOfKids.push(dinosaur)
       }
     }
-      return lotsOfKids.length;
+      return lotsOfKids;
   }
 }
 

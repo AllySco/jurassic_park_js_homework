@@ -46,7 +46,7 @@ describe('Park', function (){
     park.addDino(dinosaur1);
     park.addDino(dinosaur2);
     park.addDino(dinosaur3);
-    assert.strictEqual(3, park.getOpyOver2());
+    assert.strictEqual(3, park.getOpyOver2().length);
   })
 
 
