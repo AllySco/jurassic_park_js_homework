@@ -12,9 +12,9 @@ describe('Park', function (){
 
   beforeEach(function() {
     park = new Park();
-    dinosaur1 = new Dinosaur("Stegosaurus", 6);
-    dinosaur2 = new Dinosaur("T-rex", 2);
-    dinosaur3 = new Dinosaur("Diplodocus", 4);
+    dinosaur1 = new Dinosaur("Stegosaurus", 4);
+    dinosaur2 = new Dinosaur("T-rex", 5);
+    dinosaur3 = new Dinosaur("Diplodocus", 3);
   })
 
   it("enclosure should start empty", function() {
@@ -40,6 +40,13 @@ describe('Park', function (){
     park.addDino(dinosaur3);
     park.removeDino(dinosaur2.type);
     assert.strictEqual(3, park.enclosure.length);
+  })
+
+  it("can get dinos opy greater than 2", function() {
+    park.addDino(dinosaur1);
+    park.addDino(dinosaur2);
+    park.addDino(dinosaur3);
+    assert.strictEqual(3, park.getOpyOver2());
   })
 
 

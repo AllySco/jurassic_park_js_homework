@@ -19,8 +19,17 @@ Park.prototype = {
         this.enclosure.splice(index, 1);
       }
     }
-  }
+  },
 
+  getOpyOver2: function() {
+    var lotsOfKids = [];
+    for (var dinosaur of this.enclosure) {
+      if (dinosaur.opy > 2) {
+        lotsOfKids.push(dinosaur)
+      }
+    }
+      return lotsOfKids.length;
+  }
 }
 
 
